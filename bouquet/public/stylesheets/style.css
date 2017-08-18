@@ -89,3 +89,7 @@ body {
 .form-createresume-heading{
   margin-bottom: 10px;
 }
+
+.m-viewresume-container p{
+	font-weight: bold;
+}

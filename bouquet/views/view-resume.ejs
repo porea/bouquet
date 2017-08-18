@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Sign In</title>
+    <title>View Resume</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel='stylesheet' href='/stylesheets/style.css' />
@@ -16,7 +16,7 @@
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <!-- <img src="http://pilgrim-guild.com/wp-content/uploads/2017/04/sakura.svg" />  -->
       <a class="navbar-brand" href="/">
-        bouQuet
+      	bouQuet
       </a>
 
 
@@ -58,24 +58,89 @@
     </nav>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="m-focus jumbotron m-sign-in">
+    <div class="m-focus jumbotron m-viewresume-container">
       <div class="container">
-        <form class="form-signin">
-          <h2 class="form-signin-heading">Please sign in</h2>
-          <label for="inputEmail" class="sr-only">Email address</label>
-          <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
-          <label for="inputPassword" class="sr-only">Password</label>
-          <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" value="remember-me"> Remember me
-            </label>
-          </div>
-          <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-          <hr>
-          <span><a href="register">Register</a> a new account.</span>
-        </form>
-        
+		<form class="container" id="needs-validation" novalidate>
+		  <h2 class="form-createresume-heading">View your resume</h2>
+		  <hr>
+		  <div class="row">
+		    <div class="col-md-3 mb-3">
+		      <label for="validationCustom01">First name</label>
+		      <p>Ming</p>
+		    </div>
+		    <div class="col-md-3 mb-3">
+		      <label for="validationCustom02">Last name</label>
+		      <p>Zhao</p>
+		    </div>
+		    <div class="col-md-3 mb-3">
+		      <label for="validationCustom11">Gender</label>
+		      <p>Male</p>
+		    </div>
+		    <div class="col-md-3 mb-3">
+		      <label for="validationCustom12">Date of Birth</label>
+		      <p>21/12/1992</p>
+		    </div>
+		  </div>
+		  <div class="row">
+		    <div class="col-md-3 mb-3">
+		      <label for="validationCustom03">Nationality</label>
+		      <p>China</p>
+		    </div>
+		    <div class="col-md-3 mb-3">
+		      <label for="validationCustom04">State</label>
+		      <p>Beijing</p>
+		    </div>
+		    <div class="col-md-3 mb-3">
+		      <label for="validationCustom05">City</label>
+		      <p>Beijing</p>
+		    </div>
+		    <div class="col-md-3 mb-3">
+		      <label for="validationCustom06">Suburb</label>
+		      <p>Xicheng</p>
+		    </div>
+		  </div>
+		  <div class="row">
+		    <div class="col-md-6 mb-3">
+		      <label for="validationCustom07">Address 1</label>
+		      <p>123-456</p>
+		    </div>
+		    <div class="col-md-6 mb-3">
+		      <label for="validationCustom08">Address 2</label>
+		      <p>234-567</p>
+		    </div>
+		  </div>
+		  <div class="row">
+		    <div class="col-md-3 mb-3">
+		      <label for="validationCustom09">Email Address</label>
+		      <p>porea@live.com</p>
+		    </div>
+		    <div class="col-md-3 mb-3">
+		      <label for="validationCustom10">Phone Number</label>
+		      <p>0402049468</p>
+		    </div>
+		    <div class="col-md-6 mb-3">
+		    <span>/*More information will be required in further version.*/</span>
+		    </div>
+		  </div>
+		  <button class="btn btn-primary" type="submit">Edit</button>
+		</form>
+
+		<script>
+		// Example starter JavaScript for disabling form submissions if there are invalid fields
+		(function() {
+		  "use strict";
+		  window.addEventListener("load", function() {
+		    var form = document.getElementById("needs-validation");
+		    form.addEventListener("submit", function(event) {
+		      if (form.checkValidity() == false) {
+		        event.preventDefault();
+		        event.stopPropagation();
+		      }
+		      form.classList.add("was-validated");
+		    }, false);
+		  }, false);
+		}());
+		</script>
       </div>
     </div>
 
