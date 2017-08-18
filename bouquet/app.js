@@ -11,6 +11,7 @@ var createResume = require('./routes/create-resume');
 var signIn = require('./routes/sign-in');
 var register = require('./routes/register');
 var viewResume = require('./routes/view-resume');
+var searchResult = require('./routes/search-result');
 
 var app = express();
 
@@ -31,6 +32,7 @@ app.use('/create-resume', createResume);
 app.use('/sign-in', signIn);
 app.use('/register', register);
 app.use('/view-resume', viewResume);
+app.use('/search-result', searchResult);
 // app.use('/users', users);
 
 // catch 404 and forward to error handler

@@ -37,12 +37,13 @@
               <a class="nav-link disabled" href="#">Disabled</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Test Links</a>
               <div class="dropdown-menu" aria-labelledby="dropdown01">
                 <a class="dropdown-item" href="sign-in">Sign-in</a>
                 <a class="dropdown-item" href="register">Register</a>
                 <a class="dropdown-item" href="create-resume">Create Resume</a>
                 <a class="dropdown-item" href="view-resume">View Resume</a>
+                <a class="dropdown-item" href="search-result">Search Result</a>
               </div>
             </li>
           </ul>
@@ -61,7 +62,7 @@
     <div class="m-focus jumbotron">
       <div class="container">
 		<form class="container" id="needs-validation" novalidate>
-		  <h2 class="form-createresume-heading">Create your resume</h2>
+		  <h2 class="form-resume-heading">Create your resume</h2>
 		  <hr>
 		  <div class="row">
 		    <div class="col-md-3 mb-3">
@@ -74,9 +75,13 @@
 		    </div>
 		    <div class="col-md-3 mb-3">
 		      <label for="validationCustom11">Gender</label>
-		      <input type="text" class="form-control" id="validationCustom11" placeholder="Male/Female" required>
+				<select class="form-control custom-select">
+				  <option selected>Please select</option>
+				  <option value="Male">Male</option>
+				  <option value="Female">Female</option>
+				</select>
 		      <div class="invalid-feedback">
-		        Please provide a valid gender.
+		        Please provide a valid date of birth.
 		      </div>
 		    </div>
 		    <div class="col-md-3 mb-3">

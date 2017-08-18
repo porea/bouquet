@@ -37,12 +37,13 @@
               <a class="nav-link disabled" href="#">Disabled</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Test Links</a>
               <div class="dropdown-menu" aria-labelledby="dropdown01">
                 <a class="dropdown-item" href="sign-in">Sign-in</a>
                 <a class="dropdown-item" href="register">Register</a>
                 <a class="dropdown-item" href="create-resume">Create Resume</a>
                 <a class="dropdown-item" href="view-resume">View Resume</a>
+                <a class="dropdown-item" href="search-result">Search Result</a>
               </div>
             </li>
           </ul>
@@ -60,8 +61,8 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="m-focus jumbotron m-viewresume-container">
       <div class="container">
-		<form class="container" id="needs-validation" novalidate>
-		  <h2 class="form-createresume-heading">View your resume</h2>
+		<!-- <form class="container" id="needs-validation" novalidate> -->
+		  <h2 class="form-resume-heading">View your resume</h2>
 		  <hr>
 		  <div class="row">
 		    <div class="col-md-3 mb-3">
@@ -123,24 +124,7 @@
 		    </div>
 		  </div>
 		  <button class="btn btn-primary" type="submit">Edit</button>
-		</form>
-
-		<script>
-		// Example starter JavaScript for disabling form submissions if there are invalid fields
-		(function() {
-		  "use strict";
-		  window.addEventListener("load", function() {
-		    var form = document.getElementById("needs-validation");
-		    form.addEventListener("submit", function(event) {
-		      if (form.checkValidity() == false) {
-		        event.preventDefault();
-		        event.stopPropagation();
-		      }
-		      form.classList.add("was-validated");
-		    }, false);
-		  }, false);
-		}());
-		</script>
+		<!-- </form> -->
       </div>
     </div>
 
