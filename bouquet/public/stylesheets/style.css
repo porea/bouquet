@@ -4,9 +4,25 @@ body {
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 .m-focus{
-	padding: 8rem 2rem;
+	padding: 15rem 2rem;
 	background: url("/images/pexels-photo_mod.jpg");
 	border-radius: 0;
+	color: #fff;
+}
+.m-index-body{
+	padding-top: 0;
+}
+.m-nav{
+	background: transparent; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(0,0,0,0.25), transparent); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(0,0,0,0.25), transparent); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(0,0,0,0.25), transparent); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(0,0,0,0.25), transparent); /* Standard syntax */
+}
+.dropdown-item{
+	color: #212529 !important;
+}
+.m-nav a{
 	color: #fff;
 }
 .navbar-brand{
